@@ -47,17 +47,17 @@ body, html{
 
 @font-face {
     font-family: 'atm';
-    src: url(/AtHaussStd-Medium.05084bc.ttf);
+    src: url(./AtHaussStd-Medium.05084bc.woff2);
 }
 
 @font-face {
     font-family: 'atr';
-    src: url(/AtHaussStd-Regular.420a7b4.ttf);
+    src: url(./AtHaussStd-Regular.420a7b4.woff2);
 }
 
 @font-face {
     font-family: 'at';
-    src: url(/AtHaussStd-Retina.2bdb805.ttf);
+    src: url(./AtHaussStd-Retina.2bdb805.woff2);
 }
 
 @font-face {
