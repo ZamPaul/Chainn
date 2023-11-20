@@ -4,6 +4,10 @@ let cursor = document.querySelector('#cursor')
 let cursorfruit = document.querySelector('.fruit-text')
 let cursorfruith1s = document.querySelectorAll('.fruit-text h1')
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 window.addEventListener('mousemove',function(dets){
     gsap.to('#cursor',{
         top: dets.clientY,
