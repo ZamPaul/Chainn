@@ -2459,26 +2459,26 @@ nav{
 
 #mbimage1{
     opacity: 0.3;
-    background-image: url(/team-12.png);
+    background-image: url(./team-12.png);
 }
 #mbimage2{
-    background-image: url(/team-22.png);
+    background-image: url(./team-22.png);
     transform: rotate(60deg);
 }
 #mbimage3{
-    background-image: url(/team-32.png);
+    background-image: url(./team-32.png);
     transform: rotate(120deg);
 }
 #mbimage4{
-    background-image: url(/team-42.png);
+    background-image: url(./team-42.png);
     transform: rotate(180deg);
 }
 #mbimage5{
-    background-image: url(/team-52.png);
+    background-image: url(./team-52.png);
     transform: rotate(240deg);
 }
 #mbimage6{
-    background-image: url(/team-62.png);
+    background-image: url(./team-62.png);
     transform: rotate(360deg);
 }
 
@@ -2518,26 +2518,26 @@ nav{
 
 #mfimage1{
     opacity: 1;
-    background-image: url(/team-11.png);
+    background-image: url(./team-11.png);
 }
 #mfimage2{
-    background-image: url(/team-21.png);
+    background-image: url(./team-21.png);
     transform: rotate(-60deg);
 }
 #mfimage3{
-    background-image: url(/team-31.png);
+    background-image: url(./team-31.png);
     transform: rotate(-120deg);
 }
 #mfimage4{
-    background-image: url(/team-41.png);
+    background-image: url(./team-41.png);
     transform: rotate(-180deg);
 }
 #mfimage5{
-    background-image: url(/team-51.png);
+    background-image: url(./team-51.png);
     transform: rotate(-240deg);
 }
 #mfimage6{
-    background-image: url(/team-61.png);
+    background-image: url(./team-61.png);
     transform: rotate(-360deg);
 }
 
@@ -2599,7 +2599,7 @@ nav{
 }
 
 .members-wrap .member:nth-child(1){
-    background-image: url(/team-12.png);
+    background-image: url(./team-12.png);
     left: 50%;
     top: -50px;
     transform: translate(-50%,0%) scale(1);
@@ -2607,35 +2607,35 @@ nav{
 }
 
 .members-wrap .member:nth-child(2){
-    background-image: url(/team-22.png);
+    background-image: url(./team-22.png);
     right: -15px;
     top: 15%;
     transform: translate(0,0%) scale(0.9);
 }
 
 .members-wrap .member:nth-child(3){
-    background-image: url(/team-32.png);
+    background-image: url(./team-32.png);
     right: -15px;
     bottom: 15%;
     transform: translate(0,0%) scale(0.9);
 }
 
 .members-wrap .member:nth-child(4){
-    background-image: url(/team-42.png);
+    background-image: url(./team-42.png);
     left: 50%;
     bottom: -50px;
     transform: translate(-50%,0) scale(0.9);
 }
 
 .members-wrap .member:nth-child(5){
-    background-image: url(/team-52.png);
+    background-image: url(./team-52.png);
     left: -15px;
     bottom: 15%;
     transform: translate(0,0%) scale(0.9);
 }
 
 .members-wrap .member:nth-child(6){
-    background-image: url(/team-62.png);
+    background-image: url(./team-62.png);
     left: -15px;
     top: 15%;
     transform: translate(0,0%) scale(0.9);
