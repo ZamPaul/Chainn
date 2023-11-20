@@ -62,7 +62,7 @@ body, html{
 
 @font-face {
     font-family: 'rial';
-    src: url(/Rialto-Script.ttf);
+    src: url(./Rialto-Script.woff2);
 }
 
 #main{
