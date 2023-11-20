@@ -917,7 +917,7 @@ nav{
 }
 
 #bigimage1{
-    background-image: url(/small-circle-1.jpg);
+    background-image: url(./small-circle-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -926,7 +926,7 @@ nav{
 }
 
 #bigimage2{
-    background-image: url(/small-circle-2.jpg);
+    background-image: url(./small-circle-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -934,7 +934,7 @@ nav{
 }
 
 #bigimage3{
-    background-image: url(/small-circle-3.jpg);
+    background-image: url(./small-circle-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -942,7 +942,7 @@ nav{
 }
 
 #bigimage4{
-    background-image: url(/small-circle-24jpg.jpg);
+    background-image: url(./small-circle-24jpg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -1052,7 +1052,7 @@ nav{
 }
 
 #image1{
-    background-image: url(/small-circle-1.jpg);
+    background-image: url(./small-circle-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -1060,7 +1060,7 @@ nav{
 }
 
 #image2{
-    background-image: url(/small-circle-2.jpg);
+    background-image: url(./small-circle-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -1069,7 +1069,7 @@ nav{
 }
 
 #image3{
-    background-image: url(/small-circle-3.jpg);
+    background-image: url(./small-circle-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
@@ -1078,7 +1078,7 @@ nav{
 }
 
 #image4{
-    background-image: url(/small-circle-24jpg.jpg);
+    background-image: url(./small-circle-24jpg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no repeat;
