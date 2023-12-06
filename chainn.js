@@ -710,11 +710,25 @@ slidearrows.forEach(function(arr){
 
 let prev = document.querySelector('#prev')
 let next = document.querySelector('#next')
+
+let page6Content = document.querySelector('.page6-content')
+let wrapHeight = page6Content.getBoundingClientRect()
+let prevMove = wrapHeight.height + (window.innerWidth * 0.55) - 8
+
 let slideactive = 1;
 let moveleft;
 let animating=false;
 let sliwrap = document.querySelector('.slider-wrap')
 let slides = document.querySelectorAll('.slider-wrap .slide')
+
+let XMove = '=36vw'
+
+if(window.innerWidth<=576){
+    XMove = '=96vw'
+    gsap.set(prev,{
+        top: prevMove,
+    })
+}
 
 
 if(window.innerWidth>1050){
@@ -801,7 +815,7 @@ if(window.innerWidth>1050){
             slides.forEach(function(sli){
                 count+=1
                 gsap.to(sli,{
-                    x: '+=36vw',
+                    x: `+${XMove}`,
                     // duration: .5,
                     ease: 'power1.inOut',
                     onComplete: function(){
@@ -838,7 +852,7 @@ if(window.innerWidth>1050){
             slides.forEach(function(sli){
                 count+=1
                 gsap.to(sli,{
-                    x: '-=36vw',
+                    x: `-${XMove}`,
                     // duration: .5,
                     ease: 'power1.inOut',
                     onComplete: function(){

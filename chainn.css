@@ -2272,6 +2272,7 @@ nav{
     .page6-wrap{
         width: 90%;
         height: fit-content;
+        position: relative;
         /* background-color: #000; */
     }
     .page6-content{
@@ -2316,7 +2317,7 @@ nav{
 
 @media (max-width:576px) {
     .page6{
-        background-color: rgba(220, 20, 60, 0.199);
+        /* background-color: rgba(220, 20, 60, 0.199); */
         height: 100vh;
         margin-bottom: 10vh;
         justify-content: center;
@@ -2324,9 +2325,39 @@ nav{
     .page6-wrap{
         flex-direction: column;
         align-items: flex-start;
+        gap: 10vw;
+        /* background-color: #c01a1af1; */
     }
     .page6-content{
         width: 100%;
+        gap: 3.5vw;
+    }
+    .page6-content h1{
+        font-size: 7.5vw;
+    }
+    .slider-wrap{
+        /* background-color: rgba(238, 130, 238, 0.164); */
+        width: 100%;
+        overflow: visible;
+        gap: 6vw;
+    }
+    .slider-wrap .slide{
+        width: 90vw;
+        height: 50vh;
+    }
+    .slide .slide-image{
+        height: 90vw;
+    }
+    .slide h2{
+        font-size: 7vw;
+    }
+    #prev{
+        left: calc(0% - 10px);
+        transform: translate(0,0) scale(0);
+    }
+    #next{
+        right: calc(0% - 10px);
+        top: calc(25vh - 25px);
     }
 }
 
