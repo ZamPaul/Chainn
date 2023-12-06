@@ -1074,6 +1074,12 @@ let fruitnext = document.querySelector('#next2')
 let fruitprev = document.querySelector('#prev2')
 let fruitslideactive = 0;
 
+let responsiveXMove='=46.5vw';
+
+if(window.innerWidth <= 576){
+    responsiveXMove ='=91vw'
+}
+
 fruitnext.addEventListener('click',function(){
     if(animating==false){
         animating=true
@@ -1081,7 +1087,7 @@ fruitnext.addEventListener('click',function(){
         fruitconn.forEach(function(con){
             count+=1
             gsap.to(con,{
-                x: '-=46.5vw',
+                x: `-${responsiveXMove}`,
                 ease: 'power1.inOut',
                 onComplete: function(){
                     if(count==3){
@@ -1092,30 +1098,67 @@ fruitnext.addEventListener('click',function(){
         })
         fruitslideactive+=1
     }
-    if(fruitslideactive>=1){
-        gsap.to(fruitprev,{
-            scale: 1,
-            transformOrigin: '50% 50%',
-            duration: .4,
-            ease: 'power1.inOut'
-        })
-        gsap.to(fruitnext,{
-            scale: 0,
-            transformOrigin: '50% 50%',
-            duration: .4,
-            ease: 'power1.inOut'
-        })
-        gsap.to('.bar',{
-            width: '100%',
-            duration: .5,
-            ease: 'power1.inOut'
-        })
+
+    if(window.innerWidth>576){
+        if(fruitslideactive>=1){
+            gsap.to(fruitprev,{
+                scale: 1,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            gsap.to(fruitnext,{
+                scale: 0,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            gsap.to('.bar',{
+                width: '100%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }else{
+            gsap.to('.bar',{
+                width: '50%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }
     }else{
-        gsap.to('.bar',{
-            width: '50%',
-            duration: .5,
-            ease: 'power1.inOut'
-        })
+        if(fruitslideactive>=1){
+            gsap.to(fruitprev,{
+                scale: 1,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            if(fruitslideactive===2){
+                gsap.to(fruitnext,{
+                    scale: 0,
+                    transformOrigin: '50% 50%',
+                    duration: .4,
+                    ease: 'power1.inOut'
+                })
+                gsap.to('.bar',{
+                    width: '100%',
+                    duration: .5,
+                    ease: 'power1.inOut'
+                })
+            }else{
+                gsap.to('.bar',{
+                    width: '66%',
+                    duration: .5,
+                    ease: 'power1.inOut'
+                })
+            }
+        }else{
+            gsap.to('.bar',{
+                width: '33%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }
     }
 })
 
@@ -1126,7 +1169,7 @@ fruitprev.addEventListener('click',function(){
         fruitconn.forEach(function(con){
             count+=1
             gsap.to(con,{
-                x: '+=46.5vw',
+                x: `+${responsiveXMove}`,
                 ease: 'power1.inOut',
                 onComplete: function(){
                     if(count==3){
@@ -1138,30 +1181,60 @@ fruitprev.addEventListener('click',function(){
         fruitslideactive-=1
     }
 
-    if(fruitslideactive<1){
-        gsap.to(fruitprev,{
-            scale: 0,
-            transformOrigin: '50% 50%',
-            duration: .4,
-            ease: 'power1.inOut'
-        })
-        gsap.to(fruitnext,{
-            scale: 1,
-            transformOrigin: '50% 50%',
-            duration: .4,
-            ease: 'power1.inOut'
-        })
-        gsap.to('.bar',{
-            width: '50%',
-            duration: .5,
-            ease: 'power1.inOut'
-        })
+    if(window.innerWidth>576){
+        if(fruitslideactive<1){
+            gsap.to(fruitprev,{
+                scale: 0,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            gsap.to(fruitnext,{
+                scale: 1,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            gsap.to('.bar',{
+                width: '50%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }else{
+            gsap.to('.bar',{
+                width: '100%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }
     }else{
-        gsap.to('.bar',{
-            width: '100%',
-            duration: .5,
-            ease: 'power1.inOut'
-        })
+        if(fruitslideactive<1){
+            gsap.to(fruitprev,{
+                scale: 0,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+            gsap.to('.bar',{
+                width: '33%',
+                duration: .5,
+                ease: 'power1.inOut'
+            })
+        }else if(fruitslideactive<2){
+            if(fruitslideactive==1){
+                gsap.to('.bar',{
+                    width: '66%',
+                    duration: .5,
+                    ease: 'power1.inOut'
+                })
+            }
+            gsap.to(fruitnext,{
+                scale: 1,
+                transformOrigin: '50% 50%',
+                duration: .4,
+                ease: 'power1.inOut'
+            })
+        }
     }
 })
 
