@@ -2319,7 +2319,7 @@ nav{
     .page6{
         /* background-color: rgba(220, 20, 60, 0.199); */
         height: 100vh;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         justify-content: center;
     }
     .page6-wrap{
@@ -2512,6 +2512,24 @@ nav{
         display: block;
         font-size: 3.2vw;
         width: 80%;
+    }
+}
+
+@media (max-width:576px) {
+    .page7{
+        /* background-color: rgba(220, 20, 60, 0.308); */
+    }
+    .page7 .top{
+        width: 92%;
+    }
+    .page7 .top p:nth-child(1){
+        width: 100%;
+        font-size: 5.1vw;
+        letter-spacing: -0.2px;
+    }
+    .page7 .top p{
+        letter-spacing: -0.2px;
+        gap: 8px;
     }
 }
 
@@ -2887,6 +2905,49 @@ nav{
     }
     .info-content h1{
         font-size: 20px;
+    }
+}
+
+@media (max-width:576px) {
+    .page8{
+        /* background-color: rgba(220, 20, 60, 0.322); */
+        height: 85vh;
+    }
+    .page8 .svg-wrap{
+        width: 200%;
+        height: 200%;
+        left: 50%;
+        top: 110%;
+        transform: translate(-50%,-50%);
+    }
+    .page8 .teamh1{
+        text-align: center;
+        width: 92%;
+        font-size: 7.5vw;
+    }
+    .team-wrap .member-back{
+        width: 90vw;
+        height: 90vw;
+    }
+    .team-wrap .member-front{
+        height: 16vh;
+        width: 16vh;
+        top: 13vh;
+    }
+    .team-wrap .members-circle{
+        width: 88vw;
+        height: 88vw;
+    }
+    .team-wrap .info-arrow{
+        top: calc(13vh + 8vw);
+        transform: translate(-50%,0) scale(0.6);
+    }
+    .team-wrap .info-wrap{
+        top: calc(13vh + 2vw + 140px + 20px);
+    }
+    .members-wrap .member{
+        width: 72px;
+        height: 72px;
     }
 }
 
@@ -3267,5 +3328,24 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%) scale(2);
 }
+
+@media (max-width:1050px) {
+    .entrance-pattern svg{
+        transform: translate(-50%,-50%) scale(4);
+    }
+    .entrance-wrap .entrance-fruits{
+        transform: translate(-50%,-70%) scale(3);
+    }
+}
+
+@media (max-width:576px) {
+    .entrance-pattern svg{
+        transform: translate(-50%,-50%) scale(6);
+    }
+    .entrance-wrap .entrance-fruits{
+        transform: translate(-50%,-60%) scale(2);
+    }
+}
+
 
 

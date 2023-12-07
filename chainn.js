@@ -1365,9 +1365,13 @@ let entrance = function(){
         duration: .6,
         delay: 4
     })
+    let entranceH1 = 3.5
+    if(window.innerWidth<576){
+        entranceH1= 2.5
+    }
     gsap.from('.page1-header h1',{
         top: 'calc(50vh - 6vh - 19.5px)',
-        scale: 3.5,
+        scale: entranceH1,
         opacity: 1,
         ease: 'power1.inOut',
         duration: .6,
