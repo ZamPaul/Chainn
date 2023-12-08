@@ -372,7 +372,6 @@ nav{
     text-shadow: 0px 1.8em 0px var(--offgreen);
 }
 
-
 .full-page-menu .menu-left{
     position: absolute;
     z-index: 50;
@@ -524,6 +523,62 @@ nav{
     font-weight: 900;
     color: var(--offgreen);
 }
+
+@media (max-width:1050px) {
+    .whole-wrap .button{
+        top: 3vh;
+    }
+    .link-wrap{
+        padding: 2vw 0;
+    }
+    .link-wrap a{
+        font-size: 6.5vw;
+    }
+    .menu-right .parent-link-wrap{
+        width: 88%;
+    }
+    .menu-left .social-links{
+        margin-right: 4vw;
+    }
+    .social-links a{
+        font-size: 28px;
+    }
+    .whole-wrap .email{
+        bottom: 3vh;
+    }
+}
+
+@media (min-height:1200px) {
+    .link-wrap .circle-wrap{
+        width: 65px;
+        height: 65px;
+    }
+    .circle-wrap .circle{
+        width: 65px;
+        height: 65px;
+    }
+    .circle-wrap .circle img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width:576px) {
+    .link-wrap{
+        padding: 3.5vw 0;
+    }
+    .link-wrap a{
+        font-size: 9vw;
+    }
+    .menu-left .social-links{
+        gap: 4vw;
+    }
+    .social-links a{
+        font-size: 18px;
+    }
+}
+
+
 
 
 .page1{

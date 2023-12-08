@@ -50,7 +50,6 @@ let toggle = document.querySelector('.menu-toggle')
 let lines = document.querySelector('.lines-wrapper')
 let menu_text = document.querySelectorAll('.text-wrapper h5')
 
-
 toggle.addEventListener('mouseenter',function(){
     lines.children[0].classList.add('hover')
     lines.children[1].classList.add('hover')
@@ -92,8 +91,6 @@ toggle.addEventListener('mouseleave',function(){
         ease: 'power4,inOut'
     })
 })
-
-
 
 let fullpagemenu = document.querySelector('.full-page-menu')
 
